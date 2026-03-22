@@ -1,65 +1,90 @@
 # Dev Portfolio
 
-A dark, high-performance, brutalist-meets-modern portfolio template for full-stack developers. Built with a focus on speed, aesthetics, and user experience to help you land your next gig.
+A dark, high-performance, brutalist-meets-modern portfolio built for full-stack developers. Designed to make recruiters stop scrolling and start reaching out.
 
-## Minimum Viable Tech Stack
+## Tech Stack
 
-- **Framework:** [Next.js](https://nextjs.org/) (App Router, React 19)
+- **Framework:** [Next.js 14+](https://nextjs.org/) (App Router, TypeScript)
 - **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
 - **Components:** [shadcn/ui](https://ui.shadcn.com/)
 - **Animations:** [Framer Motion](https://www.framer.com/motion/)
 - **Icons:** [Lucide React](https://lucide.dev/)
-- **Theming:** `next-themes` (Dark/Light mode support with functional CSS variables)
-- **Typography:** Syne (Headings) & JetBrains Mono (Body/Code)
+- **Theming:** `next-themes` — Dark/Light mode with CSS variables
+- **Typography:** Syne (Headings) + JetBrains Mono (Code/Body)
 
 ## Features
 
-- **Blazing Fast:** Built on Next.js App Router for optimal performance and SEO.
-- **Premium Aesthetics:** Carefully curated dark theme with subtle gradients, glassmorphism, and micro-interactions.
-- **Fully Responsive:** Beautifully crafted for mobile, tablet, and desktop viewports.
-- **Animated Sections:** Smooth scroll, active section highlighting, immersive entry animations, and a dynamic hero background.
-- **Centralized Data:** Easy to update — all your projects, experience, and tech stack are located in `src/data/`.
+- **Snappy on every device** — mobile-first, tested at 375px, 768px, 1280px
+- **Dark brutalist aesthetic** — high contrast, bold type, electric green accent, zero generic AI slop
+- **Animated everything** — scroll-triggered reveals, hover micro-interactions, staggered entry animations
+- **One-file data layer** — update your projects, stack, and experience from `src/data/` without touching components
+- **SEO ready** — metadata configured in `layout.tsx`
+- **Accessible** — `prefers-reduced-motion` support, keyboard navigable
+
+## Sections
+
+- Hero — punchy headline, animated background, dual CTAs
+- About — value prop in 4 lines + stat row
+- Tech Stack — scrolling marquee with grouped icons and tooltips
+- Projects — card grid with live + GitHub links, tech badges
+- Experience — vertical timeline with role, company, dates, achievements
+- Contact — click-to-copy email + social links
 
 ## Getting Started
 
-1. **Clone the repository:**
-   \`\`\`bash
-   git clone <your-repo-url>
-   \`\`\`
+**1. Clone the repo**
 
-2. **Install dependencies:**
-   \`\`\`bash
-   npm install
-   # or yarn / pnpm / bun
-   \`\`\`
+```bash
+git clone https://github.com/Vineet90x/Portfolio.git
+cd Portfolio
+```
 
-3. **Provide your data:**
-   Edit the files in the `src/data/` directory:
-   - `experience.ts`
-   - `projects.ts`
-   - `stack.ts`
+**2. Install dependencies**
 
-4. **Update Personal Info:**
-   - Modify the `src/app/layout.tsx` for your SEO metadata.
-   - Update Social Links and Email in `src/components/sections/Contact.tsx`.
-   - Update your brand mark in `src/components/nav/Navbar.tsx`.
-   - Add your `resume.pdf` to the `public/` folder.
+```bash
+npm install
+```
 
-5. **Run the development server:**
-   \`\`\`bash
-   npm run dev
-   \`\`\`
+**3. Add your data**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Edit the files in `src/data/`:
 
-## Customizing the Theme
+| File            | What to update                              |
+| --------------- | ------------------------------------------- |
+| `projects.ts`   | Project name, description, tech tags, links |
+| `stack.ts`      | Tech icons, proficiency, category groups    |
+| `experience.ts` | Company, role, dates, bullet achievements   |
 
-Global CSS variables and the Tailwind configuration can be found and customized in `src/app/globals.css`. It uses the new `@theme` directive semantics for Tailwind v4.
+**4. Update personal info**
 
-## Deploy on Vercel
+- `src/app/layout.tsx` — SEO title, description, OG image
+- `src/components/sections/Contact.tsx` — your email + social links
+- `src/components/nav/Navbar.tsx` — your name/initials
+- `public/resume.pdf` — drop your resume here
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new).
+**5. Run dev server**
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+## Customization
+
+All colors, fonts, and spacing live in `src/app/globals.css` using Tailwind v4's `@theme` directive. Change the accent color in one place and it propagates everywhere.
+
+```css
+/* src/app/globals.css */
+@theme {
+  --color-accent: #00ff87; /* swap this */
+}
+```
+
+## Deploy
+
+Fastest path — push to GitHub, import on [Vercel](https://vercel.com/new), done. Zero config needed for Next.js.
 
 ## License
 
-MIT
+MIT — fork it, ship it, make it yours.
