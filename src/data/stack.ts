@@ -10,7 +10,7 @@ export const techStack: TechItem[] = [
   { name: "Next.js", category: "Frontend", proficiency: "Expert" },
   { name: "TypeScript", category: "Frontend", proficiency: "Expert" },
   { name: "Tailwind CSS", category: "Frontend", proficiency: "Expert" },
-  { name: "Framer Motion", category: "Frontend", proficiency: "Advanced" },
+  { name: "Angular", category: "Frontend", proficiency: "Advanced" },
   { name: "HTML/CSS", category: "Frontend", proficiency: "Expert" },
   { name: "Vue.js", category: "Frontend", proficiency: "Intermediate" },
 
@@ -19,13 +19,11 @@ export const techStack: TechItem[] = [
   { name: "Python", category: "Backend", proficiency: "Advanced" },
   { name: "PostgreSQL", category: "Backend", proficiency: "Advanced" },
   { name: "Redis", category: "Backend", proficiency: "Advanced" },
-  { name: "Prisma", category: "Backend", proficiency: "Expert" },
-  { name: "GraphQL", category: "Backend", proficiency: "Advanced" },
   { name: "FastAPI", category: "Backend", proficiency: "Intermediate" },
 
   // DevOps
   { name: "Docker", category: "DevOps", proficiency: "Advanced" },
-  { name: "AWS", category: "DevOps", proficiency: "Intermediate" },
+  { name: "Azure", category: "DevOps", proficiency: "Intermediate" },
   { name: "Vercel", category: "DevOps", proficiency: "Expert" },
   { name: "GitHub Actions", category: "DevOps", proficiency: "Advanced" },
   { name: "Linux", category: "DevOps", proficiency: "Advanced" },
