@@ -1,39 +1,38 @@
 export interface TechItem {
   name: string;
-  category: "Frontend" | "Backend" | "DevOps" | "Tools";
+  category: "Frontend" | "Backend" | "Database" | "Tools";
   proficiency: "Expert" | "Advanced" | "Intermediate";
 }
 
 export const techStack: TechItem[] = [
   // Frontend
-  { name: "React", category: "Frontend", proficiency: "Expert" },
-  { name: "Next.js", category: "Frontend", proficiency: "Expert" },
-  { name: "TypeScript", category: "Frontend", proficiency: "Expert" },
-  { name: "Tailwind CSS", category: "Frontend", proficiency: "Expert" },
   { name: "Angular", category: "Frontend", proficiency: "Advanced" },
-  { name: "HTML/CSS", category: "Frontend", proficiency: "Expert" },
-  { name: "Vue.js", category: "Frontend", proficiency: "Intermediate" },
+  { name: "React", category: "Frontend", proficiency: "Intermediate" },
+  { name: "Next.js", category: "Frontend", proficiency: "Intermediate" },
+  { name: "Ionic", category: "Frontend", proficiency: "Intermediate" },
+  { name: "Angular Material", category: "Frontend", proficiency: "Advanced" },
+  { name: "Tailwind CSS", category: "Frontend", proficiency: "Advanced" },
+  { name: "Material UI", category: "Frontend", proficiency: "Advanced" },
+  { name: "PrimeNG", category: "Frontend", proficiency: "Advanced" },
 
   // Backend
-  { name: "Node.js", category: "Backend", proficiency: "Expert" },
   { name: "Python", category: "Backend", proficiency: "Advanced" },
-  { name: "PostgreSQL", category: "Backend", proficiency: "Advanced" },
-  { name: "Redis", category: "Backend", proficiency: "Advanced" },
-  { name: "FastAPI", category: "Backend", proficiency: "Intermediate" },
+  { name: "FastAPI", category: "Backend", proficiency: "Advanced" },
+  { name: "Node.js", category: "Backend", proficiency: "Intermediate" },
+  { name: "NumPy", category: "Backend", proficiency: "Intermediate" },
+  { name: "Pandas", category: "Backend", proficiency: "Intermediate" },
 
-  // DevOps
-  { name: "Docker", category: "DevOps", proficiency: "Advanced" },
-  { name: "Azure", category: "DevOps", proficiency: "Intermediate" },
-  { name: "Vercel", category: "DevOps", proficiency: "Expert" },
-  { name: "GitHub Actions", category: "DevOps", proficiency: "Advanced" },
-  { name: "Linux", category: "DevOps", proficiency: "Advanced" },
+  // Database
+  { name: "PostgreSQL", category: "Database", proficiency: "Advanced" },
+  { name: "MongoDB", category: "Database", proficiency: "Advanced" },
 
   // Tools
-  { name: "Git", category: "Tools", proficiency: "Expert" },
-  { name: "Figma", category: "Tools", proficiency: "Advanced" },
-  { name: "VS Code", category: "Tools", proficiency: "Expert" },
+  { name: "Git", category: "Tools", proficiency: "Advanced" },
+  { name: "Figma", category: "Tools", proficiency: "Intermediate" },
   { name: "Postman", category: "Tools", proficiency: "Advanced" },
-  { name: "Notion", category: "Tools", proficiency: "Advanced" },
+  { name: "Power BI", category: "Tools", proficiency: "Intermediate" },
+  { name: "Linux/Unix", category: "Tools", proficiency: "Intermediate" },
+  { name: "VS Code", category: "Tools", proficiency: "Expert" },
 ];
 
-export const categories = ["Frontend", "Backend", "DevOps", "Tools"] as const;
+export const categories = ["Frontend", "Backend", "Database", "Tools"] as const;

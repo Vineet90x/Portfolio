@@ -7,33 +7,50 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    company: "TechCorp Inc.",
-    role: "Senior Full-Stack Developer",
-    dates: "Jan 2024 — Present",
+    company: "Go Digital Technology",
+    role: "Associate Engineer",
+    dates: "Feb 2025 — Present",
     achievements: [
-      "Led migration of monolithic app to microservices, reducing deploy times by 80%",
-      "Built real-time analytics dashboard serving 50K+ daily active users",
-      "Mentored 4 junior developers and established code review standards",
+      "Architected a secure authorization system using FastAPI and SuperTokens, implementing RBAC and plan-based page access controls restricting feature visibility dynamically based on subscription tier",
+      "Built and shipped 10+ responsive UI features and data visualization modules for a stock market platform using Angular, Tailwind CSS, PrimeNG, and Angular Material",
+      "Integrated Dhan API login and payment gateway flows, enabling seamless third-party authentication and transaction processing",
+      "Engineered optimized SQL views and stored procedures to improve backend data retrieval efficiency for financial data modules",
+      "Designed and executed comprehensive QA test plans covering authorization workflows, edge cases, and security scenarios ensuring system stability pre-launch",
     ],
   },
   {
-    company: "StartupXYZ",
-    role: "Full-Stack Developer",
-    dates: "Jun 2022 — Dec 2023",
+    company: "Go Digital Technology",
+    role: "Full Stack Developer Intern",
+    dates: "Dec 2024 — Feb 2025",
     achievements: [
-      "Shipped 3 production apps from zero to launch in under 6 months each",
-      "Designed and implemented RESTful APIs handling 10K+ requests/minute",
-      "Reduced page load times by 60% through code splitting and lazy loading",
+      "Developed full-stack web applications using Spring Boot, Angular, .NET Web API, SQL, and JavaScript in an Agile/Scrum environment",
+      "Designed and optimized RESTful API architectures and relational database schemas, improving scalability and query performance across multiple modules",
+      "Built cross-platform mobile applications using Vue.js and Ionic, extending product reach to mobile users",
+      "Collaborated on debugging, QA testing, and feature enhancements, contributing to measurable reduction in post-deployment defects",
     ],
   },
   {
     company: "Freelance",
-    role: "Web Developer & Consultant",
-    dates: "Mar 2021 — May 2022",
+    role: "UI/UX Designer & Frontend Developer",
+    dates: "Jul 2024 — Nov 2024",
     achievements: [
-      "Delivered 12+ client projects across e-commerce, SaaS, and portfolio sites",
-      "Built custom CMS solutions using Next.js and headless WordPress",
-      "Maintained 100% on-time delivery rate with 5-star client satisfaction",
+      "Designed a cross-platform mobile app UI/UX in Figma for a paying client, translating requirements into polished, user-centric interfaces",
+      "Developed and customized responsive WordPress websites with theme and plugin modifications to improve performance and UX",
+      "Built projects independently using React, Next.js, Tailwind CSS, and Django, broadening capability across modern frontend and backend ecosystems",
     ],
   },
+  {
+    company: "On My Own Technology",
+    role: "Robotics Associate & Technical Trainer",
+    dates: "Jul 2023 — Jul 2024",
+    achievements: [
+      "Engineered responsive UIs using HTML, CSS, JavaScript, Material UI, and Tailwind CSS across 5+ internal projects",
+      "Processed and analyzed image datasets using Python (OpenCV, NumPy, Pandas), generating visualizations with Matplotlib to support data-driven decisions",
+      "Architected and deployed full-stack web applications using the MERN stack, delivering scalable RESTful APIs across multiple projects",
+      "Delivered a structured technical curriculum covering Python, OpenCV, TensorFlow, and OOP to 20+ students over 12 months through hands-on project mentorship",
+    ],
+  },
+
+
+
 ];
